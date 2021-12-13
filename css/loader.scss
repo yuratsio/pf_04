@@ -1,0 +1,22 @@
+@import "modules/variables";
+
+.loading {
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  position : fixed;
+  top : 0;
+  right : 0;
+  bottom : 0;
+  left : 0;
+  z-index : 999;
+  background-color : $mainblue;
+  transition: transform .5s ease .2s, visibility .5s ease .2s;
+  @include rc() {
+    transition: transform .5s ease .2s, visibility .5s ease .2s !important;
+  }
+  &.loaded {
+    visibility: hidden;
+    transform: translateY(100%);
+  }
+}
