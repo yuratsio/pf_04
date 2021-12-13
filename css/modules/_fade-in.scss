@@ -1,0 +1,18 @@
+.js-fade-in {
+  & > .fade-in-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+  }
+  &--active {
+    & > .fade-in-item {
+      opacity: 1;
+      transform: none;
+      @for $i from 1 through 10 {
+        &:nth-child(#{$i}) {
+          transition-delay: $i * .2s;
+        }
+      }
+    }
+  }
+}
