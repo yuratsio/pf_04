@@ -1,0 +1,29 @@
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #4b6cb7;
+  -webkit-transition: visibility .5s ease .2s, -webkit-transform .5s ease .2s;
+  transition: visibility .5s ease .2s, -webkit-transform .5s ease .2s;
+  transition: transform .5s ease .2s, visibility .5s ease .2s;
+  transition: transform .5s ease .2s, visibility .5s ease .2s, -webkit-transform .5s ease .2s;
+}
+
+.loading.loaded {
+  visibility: hidden;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+/*# sourceMappingURL=loader.css.map */
