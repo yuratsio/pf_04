@@ -46,6 +46,10 @@ a {
     font-size: 3.2rem;
     line-height: 1;
 
+    @include mq(xs) {
+      font-size: 3rem;
+    }
+
     @include mq(md) {
       margin-right: 40px;
       font-size: 4rem;
@@ -63,6 +67,10 @@ a {
     font-weight: 500;
     font-size: 2rem;
     line-height: 1;
+
+    @include mq(xs) {
+      font-size: 1.4rem;
+    }
 
     @include mq(md) {
       font-size: 2.2rem;
@@ -92,6 +100,10 @@ a {
     font-weight: 500;
     font-size: 2.4rem;
     line-height: 1.5;
+
+    @include mq(xs) {
+      font-size: 2.2rem;
+    }
 
     @include mq(md) {
       margin-bottom: 10px;
@@ -283,7 +295,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1500px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 15px 20px;
 
@@ -611,6 +623,10 @@ a {
     letter-spacing: 0.02em;
     text-shadow: 4.243px 4.243px 4px rgba(24, 40, 72, 0.5);
 
+    @include mq(xs) {
+      font-size: 4.2rem;
+    }
+
     @include mq(md) {
       font-size: 7.2rem;
     }
@@ -629,6 +645,11 @@ a {
     font-weight: bold;
     font-size: 2rem;
     line-height: 1;
+
+    @include mq(xs) {
+      font-size: 1.8rem;
+    }
+
     @include mq(md) {
       left: 30px;
       transform: translateX(25px);
